@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Strait&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    font-family: 'Strait', sans-serif;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.convite {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    font-size: 20px;
+    animation: botao-chique 1s infinite;
+    cursor: pointer;
+}
+
+.convite:hover {
+    transform: rotate(90deg);
+}
+
+#titulo_02 {
+    font-size: 50px;
+    padding: 10px 0 0;
+}
+
+#titulo_03 {
+    font-size: 20px;
+    padding: 15px 0 15px;
+}
+
+#titulo_04 {
+    font-size: 30px;
+    padding: 20px 0 20px;
+}
+
+.cx-form {
+    background-color: #ffffff98;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 10px 30%;
+    padding: 10px 0 20px 0;
+    font-size: 15px;
+}
+
+.cx-form-dados-pessoais label{
+    display: block;
+    padding: 5px 0;
+}
+
+.cx-form-interesses div{
+    padding: 5px 0;
+}
+
+.subtitle {
+    font-size: 30px;
+    padding: 15px 0 10px;
+}
+
+.subtitle:hover {
+    transform: scale(1.2);
+    color: gray;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.subtitle3 {
+    padding: 5px 0 10px;
+}
+
+.botao {
+    padding: 50px 0 0;
+    height: 120px;
+}
+
+button {
+    margin: 20px 10px 0;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #ffffff98;
+}
+
+@keyframes botao-chique {
+    0% {
+        transform: translateY(10px);
+        color: white;
+        transform: rotate(0);
+    }
+    25% {
+        color: yellow;
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: translateY(-15px);
+        color: red;
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: translateY(10px);
+        color: white;
+        transform: rotate(0);
+        
+    }
+}

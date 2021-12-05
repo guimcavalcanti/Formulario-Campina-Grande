@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conheça Campina Grande - Paraíba</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <div class="convite">
+            <p>Visite <br> Campina <br> Grande!</p>
+        </div>
+        <h2 id="titulo_02">Campina Grande - PB!</h2>
+        <h3 id="titulo_03">Terra do Maior e Melhor São João do Mundo!</h3>
+        <h2 id="titulo_04">Preencha Nosso Formulário de Dúvidas</h2>
+    </header>
+
+    <div class="cx-form">
+        <form action="/Registro" method="post">
+
+            <div class="cx-form-dados-pessoais">
+                <h2 class="subtitle">Dados Pessoais</h2>
+                <div class="dados-nome">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" min="1" maxlength="100">
+                </div>
+                <div class="dados-email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="dados-telefone">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" name="telefone" id="telefone" placeholder="(xx) 9xxxx-xxxx">
+                </div>
+                <div class="dados-nascimento">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input type="date" name="nascimento" id="nascimento">
+                </div>
+            </div>
+
+            <div class="cx-form-maior">
+                <h2 class="subtitle">Maior de Idade</h2>
+                <div>
+                    <input type="radio" name="maior" id="sim-maior" value="Maior">
+                    <label for="sim-maior">Sim, tenho mais de 18 anos</label>
+                </div>
+                <div>
+                    <input type="radio" name="maior" id="nao-maior" value="Menor">
+                    <label for="nao-maior">Não, tenho menos de 18 anos</label>
+                </div>
+            </div>
+
+
+            <div class="cx-form-interesses">
+                <h2 class="subtitle">Interesses</h2>
+                <h3 class="subtitle3">Selecione seu interesse na cidade:</h3>
+
+                <select>
+                    <option selected disabled>Selecione</option>
+                    <option value="Visitante">Visitante</option>
+                    <option value="Novo Morador">Novo Morador</option>
+                    <option value="Andarilho">Andarilho</option>
+                    <option value="Curioso">Curioso</option>
+                    <option value="Pesquisador">Pesquisador</option>
+                </select>
+
+                <h3 class="subtitle3">Sobre o que gostaria de saber:</h3>
+                
+                <div>
+                    <input type="checkbox" name="interesses" value="Festividades" id="Festividades">
+                    <label for="Festividades">Festividades</label>    
+                </div>
+                <div>
+                    <input type="checkbox" name="interesses" value="Eventos Religiosos" id="Eventos Religiosos">
+                    <label for="Eventos Religiosos">Eventos Religiosos</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interesses" value="Artistas Regionais" id="Artistas Regionais">
+                    <label for="Artistas Regionais">Artistas Regionais</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interesses" value="Universidades" id="Universidades">
+                    <label for="Universidades">Universidades</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interesses" value="Vagas de Emprego" id="Vagas de Emprego">
+                    <label for="Vagas de Emprego">Vagas de Emprego</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interesses" value="Curiosidadades" id="Curiosidadades">
+                    <label for="Curiosidadades">Curiosidadades</label>
+                </div>
+            </div>
+
+            <div class="botoes">
+                <button type="submit">Enviar Formulário</button>
+                <button type="reset">Limpar Formulário</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <a href="https://www.instagram.com/prefcampinagrande/">
+            <img class="botao" src="./img/instagram.png" alt="Logo Instagram">
+        </a>
+        <a href="https://www.youtube.com/c/PrefeituraMunicipaldeCampinaGrande">
+            <img class="botao" src="./img/youtube.png" alt="Logo Youtube">
+        </a>
+    </footer>
+
+</body>
+
+</html>
